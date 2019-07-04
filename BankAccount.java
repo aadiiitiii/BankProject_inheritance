@@ -54,7 +54,7 @@ public class BankAccount {
 		System.out.println("The balance is: "+this.accountBalance);
 	}
 	public void removeMoney(int money) {
-		if(money>withdraw_limit && accountBalance<money) {
+		if(money>withdraw_limit || accountBalance<=money || (accountBalance-money)<min_acc_bl) {
 			System.out.println("You can remove only "+withdraw_limit+" at max.");
 		}
 		else {

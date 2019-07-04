@@ -24,7 +24,7 @@ public class SalaryAccount extends BankAccount {
 		int opt=1;
 		do {
 			System.out.println("----------------------------------");
-			System.out.println("Menu \n 1. Add money \n 2. Withdraw money \n 3. Check balance \n 4. Add address \n 5. Display address \n 6. Display all information");
+			System.out.println("Menu \n 1. Add money \n 2. Withdraw money \n 3. Check balance \n 4. Add address \n 5. Display address \n 6. Display all information \n 7. Exit");
 			System.out.println("Your option: ");
 			option= sc.nextInt();
 			System.out.println("----------------------------------");
@@ -68,6 +68,8 @@ public class SalaryAccount extends BankAccount {
 					address.displayAddress();
 					user.checkBalance();
 					break;
+				case 7:
+					return;
 			}
 		} while (opt==1);
 	}		

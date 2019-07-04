@@ -14,10 +14,12 @@ public class MainClass {
 	
 	public static void main(String args[]) {
 		int choice;
+		do {
 		System.out.println("Enter type of account: ");
 		System.out.println("1. Savings Account");
 		System.out.println("2. Current Account");
 		System.out.println("3. Salary Account");
+		System.out.println("4. Exit");
 		choice= sc.nextInt();
 		
 		switch(choice) {
@@ -38,6 +40,6 @@ public class MainClass {
 			break;
 		
 		}
-			
+		}while(choice!=4);
 	}
 }
